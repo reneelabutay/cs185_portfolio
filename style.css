@@ -1,0 +1,14 @@
+.header {
+	font-family: Arial
+}
+.nav-bar {
+	display: flex;
+	font-family: Arial
+}
+.nav-bar > div {
+	padding: 10px;
+}
+.main-body {
+	display: flex;
+	font-family: Arial
+}
