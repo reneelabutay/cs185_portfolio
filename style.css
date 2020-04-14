@@ -1,9 +1,16 @@
-.header {
-	
-}
 body {
 	padding: 8px;
 }
+
+.header {
+	display: flex;
+	flex-direction: row;
+}
+.external-links {
+	margin-left: auto;
+	padding-top: 16px;
+}
+
 
 /*NAVIGATION BAR*/
 .nav-bar {
@@ -15,6 +22,7 @@ body {
 	text-align: center;
 	position: relative;
 }
+
 .nav-bar > div > a {
 	color: #2d2d2b;
 	text-decoration: none;
@@ -36,13 +44,46 @@ body {
 .nav-bar > div > a:hover::before {
 	width:100%;
 }
+
+
 /*HOME PAGE*/
+
+
 .main-body {
-	padding-top: 10px;
+	display: flex;
+	padding-top: 0 4px;
+	
+}
+.main-body > div > img{
+	max-width: 100%;
+	height:auto;
+	
+}
+
+.main-body > div > p {
+	padding-left:10px;
+}
+
+
+/*PROJECTS*/
+.projects-body {
+	padding: 12px;
+}
+
+.projects-body > div {
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 12px;
+	border: 1px solid black;
+	background-color: #c7c7bb
+}
+
+.container {
 	display: flex;
 }
-.main-body > div > p {
-	padding-left: 10px;
+.container > div {
+	padding: 10px;
 }
 
 
