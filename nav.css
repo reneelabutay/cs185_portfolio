@@ -30,6 +30,12 @@ nav {
 	font-weight: bold;
 }
 
+/*Tab corresponding to the current page on display should be highlighted.*/
+.nav-bar a:hover {
+	color: #c7c7bb;
+}
+
+
 .lines {
 	display: none;
 	cursor: pointer;
@@ -42,7 +48,7 @@ nav {
 	margin: 5px;
 	transition: all 0.3s ease;
 }
-
+/* Adding Responsiveness*/
 @media screen and (max-width: 1024px) {
 	.nav-bar {
 		width: 50%;
