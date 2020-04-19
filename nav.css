@@ -35,7 +35,6 @@ nav {
 	color: #c7c7bb;
 }
 
-
 .lines {
 	display: none;
 	cursor: pointer;
@@ -49,13 +48,13 @@ nav {
 	transition: all 0.3s ease;
 }
 /* Adding Responsiveness*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1096px) {
 	.nav-bar {
-		width: 50%;
+		width: 55%;
 	}
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 850px) {
 	body {
 		overflow-x: hidden;
 	}

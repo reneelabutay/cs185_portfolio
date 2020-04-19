@@ -4,6 +4,26 @@
 	box-sizing: border-box;
 	font-family: 'Libre Franklin';
 	font-weight: 200;
+	font-size: 16px;
+	line-height: 150%;
+}
+
+.page-body {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.page-title {
+	font-family: 'Open Sans';
+	font-size: 32px;
+	font-weight: 700px;
+	padding-bottom: 12px;
+}
+
+p {
+	margin-bottom: 16px;
 }
 
 /*******************/
@@ -13,8 +33,7 @@
 .main-body {
 	display: flex;
 	align-items: center;
-	padding: 8px;
-	
+	padding: 24px;
 }
 .main-body div {
 	flex: 1 1 0;
@@ -26,6 +45,7 @@
 }
 .right-side {
 	margin: 0 auto;
+
 }
 
 .main-body > div > img {
@@ -65,15 +85,14 @@
 /***  PHOTOGRAPHY  ***/
 /*********************/
 
-.photo-description {
-}
 .row {
 	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
-	padding: 0 4px;
+	margin: 0 auto;
 }
 .column {
-  flex: 24%;
+  flex: 25%;
   max-width: 25%;
   padding: 0 4px;
   margin:auto;
@@ -85,8 +104,14 @@
   width: 100%
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns 
-@media screen and (max-width: 800px) {
+/* Responsive layout - turns 4 columns into 3 then 2 columns */
+@media screen and (max-width: 1100px) {
+  .column {
+    flex: 30%;
+    max-width: 30%;
+  }
+}
+@media screen and (max-width: 850px) {
   .column {
     flex: 50%;
     max-width: 50%;
