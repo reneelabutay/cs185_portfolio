@@ -18,7 +18,7 @@
 .page-title {
 	font-family: 'Open Sans';
 	font-size: 32px;
-	font-weight: 700px;
+	font-weight: bold;
 	padding-bottom: 12px;
 }
 
@@ -72,7 +72,6 @@ p {
 	display: block;
 	clear:both;
 	text-align: center;
-
 }
 
 .project-item {
@@ -193,16 +192,68 @@ p {
 /*******************/
 /****  VIDEOS   ****/
 /*******************/
-.vids {
+
+.video-container {
 	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-}
-.vids > * {
-	margin-right: auto;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+
 }
 
-.vids > * > * {
-	margin-right: auto;
-	padding-right: 24px;
-} 
+.video-item {
+	flex:50%;
+	max-width: 50%;
+	margin: 20px;
+	text-align: center;
+}
+
+.video-item iframe {
+	flex:50%;
+	margin: 0 auto;
+}
+.video-item p {
+	padding-top: 8px;
+	letter-spacing: 3px;
+}
+
+/*Adding Responsiveness to video page*/
+@media screen and (max-width: 1000px) {
+  .video-container {
+  	flex-direction: column;
+  	justify-content: space-between;
+  }
+  .video-item {
+  	flex:80%;
+  }
+  .video-item iframe {
+  	width: 100%;
+  	height: 100%;
+  }
+}
+
+/*********************************/
+/****  "BACK TO TOP" BUTTON   ****/
+/*********************************/
+.go-to-top {
+    position: fixed;
+    bottom: 56px;
+    right: 48px;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 10px;
+    display: none;
+    margin: 0;
+}
+
+.go-to-top:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-decoration: none;
+}
+
+
+
