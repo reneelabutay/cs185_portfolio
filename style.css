@@ -30,6 +30,13 @@ p {
 /***  HOME PAGE  ***/
 /*******************/
 
+.home-title {
+	font-family: 'Open Sans';
+	font-weight: bold;
+	font-size: 48px;
+	padding-left: 8px;
+}
+
 .main-body {
 	display: flex;
 	align-items: center;
@@ -45,7 +52,7 @@ p {
 }
 .right-side {
 	margin: 0 auto;
-
+	padding-left: 16px;
 }
 
 .main-body > div > img {
@@ -61,10 +68,40 @@ p {
 /***  PROJECTS   ***/
 /*******************/
 
-.projects-body {
-	padding: 12px;
+.project-row {
+	display: block;
+	clear:both;
+	text-align: center;
+
 }
 
+.project-item {
+	display: inline-block;
+	width: 45%;
+	margin:20px;
+	background-color: #f6f5f0;
+	box-shadow:10px 10px 10px grey;
+}
+
+/*Project Description*/
+.project-item p {
+	padding: 25px;
+	padding-top:0px;
+	text-align: left;
+	background-color: white;
+
+}
+
+.project-item h3 {
+	font-family: 'Open Sans';
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: white;
+	
+}
+
+
+/*
 .projects-body > div {
 	display: block;
 	width: 100%;
@@ -80,7 +117,7 @@ p {
 .container > div {
 	padding: 10px;
 }
-
+*/
 /*********************/
 /***  PHOTOGRAPHY  ***/
 /*********************/
@@ -90,6 +127,7 @@ p {
 	flex-direction: row;
 	flex-wrap: wrap;
 	margin: 0 auto;
+
 }
 .column {
   flex: 25%;
@@ -142,6 +180,7 @@ p {
 }
 
 .modal-content {
+	/*horizontal and vertically aligns the image*/
 	position: relative;
 	top:50%;
 	left:50%;
