@@ -3,63 +3,48 @@
 <head>
 	<title>Renee Labutay</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
-<style>
-body {
-    font-family: 'Roboto Condensed';font-size: 16px;
-}
-</style>
+	<link rel="stylesheet" type="text/css" href="nav.css">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;300;400;500&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 <body>
-	<div class="header">
-		<h1>Hi, I'm Renee.</h1>
-		<div class="external-links">
-			<a href="https://www.linkedin.com/in/reneelabutay/">
-				<img border="0" src="images/linkedin-logo.png" width="48" height="48"></a> 
-			<a href="https://github.com/reneelabutay">
-				<img border="0" src="images/github-logo.png" width="48" height="48"></a>
-		</div>
+	<!--Navigation bar-->
+	<div id="nav-placeholder">
 	</div>
-	<!-- Navigation Bar -->
-	<div class="nav-bar">
-		<div><a href="index.html">Home</a></div>
-		<div><a href="projects.html">Projects</a></div>
-		<div><a href="photography.html">Photography</a></div>
-		<div><a href="videos.html">Tik Tok Favorites</a></div>
-	</div>
-	<h2>Projects</h2>
-	<p>Below are some of the projects that I have completed. Click on the images to learn more. </p>
+	<script type="text/javascript">
+		$("#nav-placeholder").load("nav-bar.html")
+	</script>
+	<!--end of Navigation bar-->
+
+	<!--Projects Body-->
+	<div class="page-body">
+	<h2 class="page-title">Projects</h2>
+	<p>Below are some of the projects that I have completed. Click on the icons to learn more. </p>
 	<div class="projects-body">
-		<div class="pacman">
+	<div class="project-row">
+		<!--Projects Item #1-->
+		<div class="project-item">
+			<a href="https://github.com/reneelabutay/CS165_AI_Pacman">
+				<img src="https://img.icons8.com/cotton/200/000000/pacman.png"/>
+			</a>
 			<h3>Pacman AI</h3>
-			<div class="container">
-				<div>
-					<a href="https://github.com/reneelabutay/CS165_AI_Pacman">
-						<img border="0" src="images/pacman.png" width="400" height="200">
-					</a> 
-				</div>
-				<div>
-					<p>
-						An application of graph search algorithms, reinforcement learning, and machine learning to help the Pacman agent collect all the points while avoiding the ghosts. 
-					</p>
-				</div>
-			</div>
+			<p>
+				An application AI techniques. Implemented graph search algorithms, reinforcement learning, and machine learning to help the Pacman agent collect all the points while avoiding the ghosts. 
+			</p>
 		</div>
-		<div class="quash">
+		<!--Projects Item #2-->
+		<div class="project-item">
+			<a href="https://github.com/reneelabutay/CS130a_prog1">
+				<img border="0" src="images/ds.png" width="200" height="200">
+			</a> 
 			<h3>Quash</h3>
-			<div class="container">
-				<div>
-					<a href="https://github.com/reneelabutay/CS130a_prog1">
-						<img border="0" src="images/ds.png" width="200" height="200">
-					</a> 
-				</div>
-				<div>
-					<p>
-						Construction of a priority queue and hash table compound data structure in C++ primarily used to store IP addresses. Supported insert, delete, and lookup functions.
-					</p>
-				</div>
-			</div>
+			<p>
+				Construction of a priority queue and hash table compound data structure in C++ primarily used to store IP addresses. Supported insert, delete, and lookup functions.
+			</p>
 		</div>
+	</div>
+	</div>
 	</div>
 </body>
 </html>

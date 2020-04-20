@@ -3,33 +3,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Renee Labutay</title>
+	<title>Photography | Renee Labutay</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
-<style>
-body {
-    font-family: 'Roboto Condensed';font-size: 16px;
-}
-</style>
+	<link rel="stylesheet" type="text/css" href="nav.css">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;300;400;500&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-	<div class="header">
-		<h1>Hi, I'm Renee.</h1>
-		<div class="external-links">
-			<a href="https://www.linkedin.com/in/reneelabutay/">
-				<img border="0" src="images/linkedin-logo.png" width="48" height="48"></a> 
-			<a href="https://github.com/reneelabutay">
-				<img border="0" src="images/github-logo.png" width="48" height="48"></a>
-		</div>
+	<!--Navigation bar-->
+	<div id="nav-placeholder">
 	</div>
-	<!-- Navigation Bar -->
-	<div class="nav-bar">
-		<div><a href="index.html">Home</a></div>
-		<div><a href="projects.html">Projects</a></div>
-		<div><a href="photography.html">Photography</a></div>
-		<div><a href="videos.html">Tik Tok Favorites</a></div>
-	</div>
-	<h2>Photography</h2>
+	<script type="text/javascript">
+		$("#nav-placeholder").load("nav-bar.html")
+	</script>
+	<!--end of Navigation bar-->
+
+	<!--PHOTOGRAPHY BODY-->
+	<div class="page-body">
+		<h2 class="page-title">Photography</h2>
 	<div class="photography-body">
 		<div class="photo-description">
 			<p>
@@ -38,33 +29,54 @@ body {
 		</div>
 		<div class="row">
 			<div class="column">
-				<img src="images/islands.jpg">
-				<img src="photography/22.jpg">
-				<img src="photography/33.jpg">
-				<img src="photography/44.jpg">
+				<img src="images/islands.jpg" class="img">
+				<img src="photography/22.jpg" class="img">
+				<img src="photography/33.jpg" class="img">
+				<img src="photography/44.jpg" class="img">
 			</div>
 			<div class="column">
-				<img src="photography/55.jpg">
-				<img src="photography/66.jpg">
-				<img src="photography/77.jpg">
-				<img src="photography/88.jpg">
+				<img src="photography/55.jpg" class="img">
+				<img src="photography/66.jpg" class="img">
+				<img src="photography/77.jpg" class="img">
+				<img src="photography/88.jpg" class="img">
 			</div>
 			<div class="column">
-				<img src="photography/99.jpg">
-				<img src="photography/100.jpg">
-				<img src="photography/111.jpg">
-				<img src="photography/122.jpg">
+				<img src="photography/99.jpg" class="img">
+				<img src="photography/100.jpg" class="img">
+				<img src="photography/111.jpg" class="img">
+				<img src="photography/122.jpg" class="img">
 			</div>
 			<div class="column">
-				<img src="photography/133.jpg">
-				<img src="photography/144.jpg">
-				<img src="photography/155.jpg">
-				<img src="photography/166.jpg">
-			</div>
-			
+				<img src="photography/133.jpg" class="img">
+				<img src="photography/144.jpg" class="img">
+				<img src="photography/155.jpg" class="img">
+				<img src="photography/166.jpg" class="img">
+			</div>	
 		</div>
-
-
+		<!--MODAL: the pop-up window that's displayed on top of current page-->
+		<!--This will be used for clicking the images and enlarging them-->
+		<div class="modal" id="myModal">
+			<img class="modal-content" id="modal_img">
+		</div>
 	</div>
+	</div>
+	<script type="text/javascript">
+		var modal = document.getElementById("myModal");
+		var images = document.getElementsByClassName("img");
+		var img_modal = document.getElementById("modal_img");
+		
+		for(var i=0; i<images.length; i++) {
+			var click_img = images[i]
+			click_img.onclick = function(evt) {
+				modal.style.display = "block";
+				img_modal.src = this.src;
+				img_modal.style.cursor="auto";
+				modal.style.cursor="pointer";
+			}
+		}
+		modal.onclick = function() {
+			modal.style.display="none";
+		}
+	</script>
 </body>
 </html>
