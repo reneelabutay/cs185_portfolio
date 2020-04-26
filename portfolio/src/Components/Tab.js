@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 export class Tab extends Component {
 	addStyling = () => {
 		if(this.props.tab.id === this.props.activeTab) {
-			return {backgroundColor: 'gray'}
+			return {backgroundColor:'rgba(255, 255, 255, 0.1)'}
 		} else {
-			return {backgroundColor: 'white'}
+			return {backgroundColor: '#5f7782'}
 		}
 	}
 
@@ -19,7 +19,3 @@ export class Tab extends Component {
 	}
 }
 export default Tab;
-
-/*
-- can specify rules
-*/

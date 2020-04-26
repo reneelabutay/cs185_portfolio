@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import image_self from './images/self.jpg';
+
 
 export class Home extends Component {
 	
@@ -10,7 +10,7 @@ export class Home extends Component {
 				<div className="page-body">
 				<div className="main-body">
 					<div className="left-side">
-						<img src={image_self}/>
+						<img src={require('./images/self.jpg')}/>
 
 					</div>
 					<div className="right-side">
