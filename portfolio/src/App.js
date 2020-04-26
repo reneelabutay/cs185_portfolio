@@ -5,6 +5,7 @@ import './nav-bar.css';
 import Body from './Components/Body';
 import TabList from './Components/TabList';
 import ScrollToTop from './Components/ScrollToTop';
+import SimpleReactLightbox from 'simple-react-lightbox'
 
 
 
@@ -43,6 +44,7 @@ export class App extends Component {
 	  	]
 	    return (
 	    	<div className="body">
+	    		<SimpleReactLightbox>
 	    		<div className="navigation-bar">
 	    			<div class="logo">Renee Labutay</div>
 	    			<TabList tabs={tabs} 
@@ -55,6 +57,7 @@ export class App extends Component {
 	    		<div className="scroll-button">
 	    			<ScrollToTop/>
 	    		</div>
+	    		</SimpleReactLightbox>
 	    	</div>
 	    );
   }
