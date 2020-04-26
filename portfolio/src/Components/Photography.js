@@ -17,9 +17,8 @@ export class Photography extends Component {
 						</p>
 					</div>
 					<SRLWrapper>
-					<div className="row">
+					<div className="photo-row">
 						<div className="column">
-							
 							<img src={require("./images/islands.jpg")} className="img"/>
 							<img src={require("./images/photography/22.jpg")} className="img"/>
 							<img src={require("./images/photography/33.jpg")} className="img"/>
@@ -28,7 +27,6 @@ export class Photography extends Component {
 	    				</div>
 						
 						<div className="column">
-							
 							<img src={require("./images/photography/55.jpg")} className="img"/>
 							<img src={require("./images/photography/66.jpg")} className="img"/>
 							<img src={require("./images/photography/77.jpg")} className="img"/>
@@ -53,10 +51,9 @@ export class Photography extends Component {
 						</div>	
 					</div>
 					</SRLWrapper>
+	    		</div>
+	    		</div>
 	    	</div>
-	    	</div>
-	    	</div>
-
 	    );
   	}
 }

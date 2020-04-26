@@ -165,6 +165,7 @@ p {
 }*/
 
 /*adding modal background*/
+/*
 .modal {
 	display: none;
 	position: fixed;
@@ -177,9 +178,10 @@ p {
 	background-color: #000000;
 	background-color: rgba(0,0,0,0.9);
 }
-
+*/
+/*
 .modal-content {
-	/*horizontal and vertically aligns the image*/
+	/*horizontal and vertically aligns the image
 	position: relative;
 	top:50%;
 	left:50%;
@@ -188,7 +190,7 @@ p {
 	width: 56%;
 	max-width: 700px; 
 }
-
+*/
 /*******************/
 /****  VIDEOS   ****/
 /*******************/
